@@ -100,7 +100,7 @@ export const getUser = catchAsync(async (req: Request, res: Response, next: Next
 });
 
 export const updateUserSocialLinks = catchAsync(async (req: Request, res: Response, next: NextFunction) => {
-    const { data } = req.body; // Đảm bảo rằng bạn nhận được đúng đối tượng `socialLinks`ddd
+    const { data } = req.body; // Đảm bảo rằng bạn nhận được đúng đối tượng `socialLinks`ddddsadsadsa
     const userId = req.user?._id as RedisKey;
     const user = await UserModel.findById(userId);
 
