@@ -1,6 +1,6 @@
 import express from 'express';
 import userRoutes from '../routes/user.route';
-// import courseRoutes from '../routes/course.route';
+import courseRoutes from '../routes/course.route';
 // import orderRoutes from '../routes/order.route';
 // import notificationRoutes from '../routes/notification.route';
 // import layoutRoutes from '../routes/layout.route';
@@ -20,7 +20,7 @@ const router = express.Router();
 
 router.use('/users', userRoutes);
 
-// router.use('/courses', courseRoutes);
+router.use('/courses', courseRoutes);
 
 // router.use('/sections', sectionRoutes);
 
